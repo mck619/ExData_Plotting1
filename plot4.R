@@ -14,19 +14,19 @@ png('plot4.png')
 
 par(mfrow = c(2,2))
 
-plot(x$datetime, x$Global_active_power, ylab = "Global Active Power", xlab = '',type = 'n', cex.lab = .75, cex.axis = .75)
+plot(x$datetime, x$Global_active_power, ylab = "Global Active Power", xlab = '',type = 'n', cex.lab = 1, cex.axis = 1)
 lines(x$datetime, x$Global_active_power)
 
-plot(x$datetime, x$Voltage, ylab = "Voltage", xlab = 'datetime',type = 'n', cex.lab = .75, cex.axis = .75)
+plot(x$datetime, x$Voltage, ylab = "Voltage", xlab = 'datetime',type = 'n', cex.lab = 1, cex.axis = 1)
 lines(x$datetime, x$Voltage)
 
-plot(x$datetime, x$Sub_metering_1, ylab = "Energy sub metering", xlab = '',type = 'n', cex.lab = .75, cex.axis = .75)
+plot(x$datetime, x$Sub_metering_1, ylab = "Energy sub metering", xlab = '',type = 'n', cex.lab = 1, cex.axis = 1)
 lines(x$datetime, x$Sub_metering_1)
 lines(x$datetime, x$Sub_metering_2,col = "red")
 lines(x$datetime, x$Sub_metering_3,col = "blue")
-legend("topright",col = c("black","red","blue"), legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),bty = "n", lty=1, cex = .75)
+legend("topright",col = c("black","red","blue"), legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),bty = "n", lty=1, cex = .85)
 
-plot(x$datetime, x$Global_reactive_power, ylab = "Global_reactive_power", xlab = 'datetime',type = 'n', cex.lab = .75, cex.axis = .75)
+plot(x$datetime, x$Global_reactive_power, ylab = "Global_reactive_power", xlab = 'datetime',type = 'n', cex.lab = 1, cex.axis = 1)
 lines(x$datetime, x$Global_reactive_power)
 
 dev.off()
